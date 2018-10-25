@@ -1,8 +1,10 @@
 <template>
     <div>
+        <pkfooter></pkfooter>
         <pkgoodsheader></pkgoodsheader>
         <pkgoodsnav></pkgoodsnav>
         <pkgoodscontent></pkgoodscontent>
+
 
 
     </div>
@@ -13,6 +15,8 @@
     import pkgoodsheader from './goods/pkgoodsheader.vue'
     import pkgoodsnav from './goods/pkgoodsnav.vue'
     import pkgoodscontent from './goods/pkgoodscontent.vue'
+    import pkfooter from './pkfooter.vue'
+
 
 
 
@@ -20,7 +24,8 @@
         components: {
             pkgoodsheader,
             pkgoodsnav,
-            pkgoodscontent
+            pkgoodscontent,
+            pkfooter
 
 
         }

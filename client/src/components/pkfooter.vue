@@ -115,11 +115,12 @@ export default {
 
 <style scoped>
     .weui-tabbar {
-        position: fixed;
+        position: fixed !important;
         background:#fff;
-        bottom: 0;
+        bottom: 0 !important;
         left: 0;
         height: 48px;
+        z-index: 999999999 !important;
     }
     .weui-tabbar img {
         width: 25px;

@@ -92,7 +92,7 @@ export default {
       $.ajax({
         type: "get",
         url: "http://localhost:9999/getContent",
-        data: { num: 2 },
+        data: { num: 1 },
         async: true,
         success: function(data) {
           var alldata = JSON.parse(data).data.data;
@@ -100,7 +100,7 @@ export default {
             self.arr.push(alldata[i]);
 
             // 打印数据
-            console.log(alldata[i]);
+            // console.log(alldata[i]);
           }
         }
       });
@@ -119,7 +119,7 @@ export default {
           data: { num: self.num },
           async: true,
           success: function(data) {
-            console.log(JSON.parse(data).data.data);
+            // console.log(JSON.parse(data).data.data);
             var alldata = JSON.parse(data).data.data;
             for (var i = 0; i < alldata.length; i++) {
               self.arr.push(alldata[i]);

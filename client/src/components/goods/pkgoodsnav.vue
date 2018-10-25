@@ -27,8 +27,8 @@ export default {
       
 
 
-      console.log(goodsnav);
-      console.log(lis);
+      // console.log(goodsnav);
+      // console.log(lis);
     }
   },
   mounted() {

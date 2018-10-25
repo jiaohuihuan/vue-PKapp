@@ -5,7 +5,7 @@
         </span>
         <span class="s2">
             <i class="el-icon-search"></i>
-            <input type="text" Placeholder="搜配方" />
+            <input type="text" class="search" @click="search" Placeholder="搜配方" />
         </span>
         <span class="s3">
             <i class="el-icon-plus"></i>
@@ -20,6 +20,13 @@
             return {
                 input21: ''
             }
+        },
+        methods:{
+            //点击输入款切换路由，切换页面————————————————————————————————————————
+            search(){
+                this.$router.push({ path: "/pkhomesearch" });
+            }
+            //点击输入款切换路由，切换页面结束————————————————————————————————————————
         }
     }
 </script>

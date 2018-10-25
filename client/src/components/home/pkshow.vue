@@ -56,7 +56,7 @@
                         </li>
                     </ul>
             </div>
-        </div>
+          </div>
         <pkshows class="pkshows" v-show="isShow"></pkshows>
       </li>
     </ul>
@@ -69,6 +69,11 @@ import { InfiniteScroll } from "mint-ui";
 import Vue from "vue";
 Vue.use(InfiniteScroll);
 
+// 单独引进mint-ui组件
+import { Spinner } from 'mint-ui';
+Vue.component(Spinner.name, Spinner);
+
+// 引进小图单组件
 import pkshows from "./pkshows.vue";
 
 export default {
@@ -76,7 +81,7 @@ export default {
     return {
       arr: [],
       list: [],
-      num:9,
+      num:'',
       isShow:false,
     };
   },

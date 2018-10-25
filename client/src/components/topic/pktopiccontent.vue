@@ -21,7 +21,7 @@ export default {
     return {
       arr: [],
       list: [],
-      num:29
+      num:''
     };
   },
   methods: {
@@ -60,7 +60,7 @@ export default {
           data: { num: self.num },
           async: true,
           success: function(data) {
-            console.log(JSON.parse(data).data.data);
+            // console.log(JSON.parse(data).data.data);
             var alldata = JSON.parse(data).data.data;
             for (var i = 0; i < alldata.length; i++) {
               self.arr.push(alldata[i]);

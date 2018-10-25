@@ -1,19 +1,19 @@
 <template>
     <div class="option">
         <ul>
-            <li>
+            <li @click="pf">
                 <img src="../../assets/home/j-zxpf.jpg" >
                 <p>智选配方</p>
             </li>
-            <li>
+            <li @click="xz">
                 <img src="../../assets/home/j-wxz.jpg" >
                 <p>我想做</p>
             </li>
-            <li>
+            <li @click="zg">
                 <img src="../../assets/home/j-wzg.jpg" >
                 <p>我做过</p>
             </li>
-            <li>
+            <li @click="kg">
                 <img src="../../assets/home/j-zjkg.jpg" >
                 <p>最近看过</p>
             </li>
@@ -24,7 +24,30 @@
 
 <script>
     export default {
-        
+        methods:{
+            //点击输入款切换路由，切换页面————————————————————————————————————————
+
+            pf(){
+                this.$router.push({ path: "/optionpf" });
+            },
+
+
+            xz(){
+                this.$router.push({ path: "/optionxz" });
+            },
+
+
+            zg(){
+                this.$router.push({ path: "/optionzg" });
+            },
+
+
+            kg(){
+                this.$router.push({ path: "/optionkg" });
+            }
+
+            //点击输入款切换路由，切换页面结束————————————————————————————————————————
+        }
     }
 </script>
 

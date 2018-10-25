@@ -2,7 +2,7 @@
     <div class="header">
         <span class="search">
             <i class="el-icon-search"></i>
-            <input type="text" Placeholder="搜帖子、焙友" />
+            <input type="text" @click="search" Placeholder="搜帖子、焙友" />
         </span>
         <span class="post">发帖子</span>
     </div>
@@ -15,6 +15,13 @@
             return {
                 input21: ''
             }
+        },
+        methods:{
+            //点击输入款切换路由，切换页面————————————————————————————————————————
+            search(){
+                this.$router.push({ path: "/pkcommunitysearch" });
+            }
+            //点击输入款切换路由，切换页面结束————————————————————————————————————————
         }
     }
 </script>

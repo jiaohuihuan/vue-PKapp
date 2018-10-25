@@ -22,23 +22,6 @@ import 'mint-ui/lib/style.css'
 Vue.use(MintUI);
 
 
-//axios
-// import axios from 'axios';
-// Vue.use(axios);
-// 方便在其他组件中直接使用axios
-// Vue.prototype.$axios = axios;
-
-
-
-
-
-// // 引入vuex
-// import Vuex from 'vuex';
-// Vuex.use(Vuex);
-
-// // 引入store公共仓库
-// import store from './store';
-
 Vue.config.productionTip = false
 
 

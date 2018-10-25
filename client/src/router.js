@@ -5,9 +5,18 @@ Vue.use(Router);
 
 import Pkfooter from '@/components/pkfooter'
 import Pkhome from '@/components/pkhome'
-import Pkcommunity from '@/components/pkcommunity'
-import Pkgoods from '@/components/pkgoods'
+import Pkhomesearch from '@/components/home/pkhomesearch'
+import Optionpf from '@/components/home/option/optionpf'
+import Optionxz from '@/components/home/option/optionxz'
+import Optionzg from '@/components/home/option/optionzg'
+import Optionkg from '@/components/home/option/optionkg'
+
+
 import Pktopic from '@/components/pktopic'
+import Pkgoods from '@/components/pkgoods'
+import Pkgoodssearch from '@/components/goods/pkgoodssearch'
+import Pkcommunity from '@/components/pkcommunity'
+import Pkcommunitysearch from '@/components/pkcommunity/pkcommunitysearch'
 import Pkmine from '@/components/pkmine'
 import Pklogin from '@/components/mine/pklogin'
 import Pkreg from '@/components/mine/pkreg'
@@ -30,9 +39,34 @@ export default new Router({
         component: Pkhome,
     },
     {
-        path: '/pkcommunity',
-        name: 'pkcommunity',
-        component: Pkcommunity
+        path: '/pkhomesearch',
+        name: 'pkhomesearch',
+        component: Pkhomesearch,
+    },
+    {
+        path: '/optionpf',
+        name: 'optionpf',
+        component: Optionpf,
+    },
+    {
+        path: '/optionxz',
+        name: 'optionxz',
+        component: Optionxz,
+    },
+    {
+        path: '/optionzg',
+        name: 'optionzg',
+        component: Optionzg,
+    },
+    {
+        path: '/optionkg',
+        name: 'optionkg',
+        component: Optionkg,
+    },
+    {
+        path: '/pktopic',
+        name: 'pktopic',
+        component: Pktopic
     },
     {
         path: '/pkgoods',
@@ -40,9 +74,19 @@ export default new Router({
         component: Pkgoods
     },
     {
-        path: '/pktopic',
-        name: 'pktopic',
-        component: Pktopic
+        path: '/pkgoodssearch',
+        name: 'pkgoodssearch',
+        component: Pkgoodssearch,
+    },
+    {
+        path: '/pkcommunity',
+        name: 'pkcommunity',
+        component: Pkcommunity
+    },
+    {
+        path: '/pkcommunitysearch',
+        name: 'pkcommunitysearch',
+        component: Pkcommunitysearch
     },
     {
         path: '/pkmine',
