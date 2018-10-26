@@ -4,6 +4,7 @@
         <pkgoodsheader></pkgoodsheader>
         <pkgoodsnav></pkgoodsnav>
         <pkgoodscontent></pkgoodscontent>
+        <pkfooter></pkfooter>
 
 
 
@@ -26,7 +27,6 @@
             pkgoodsnav,
             pkgoodscontent,
             pkfooter
-
 
         }
     }

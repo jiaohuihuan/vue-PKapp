@@ -3,7 +3,7 @@
         <div>
             <img src="../assets/mine/j-mine.jpg">
         </div>
-        <router-view></router-view>
+        <pkfooter></pkfooter>
     </div>
     
 </template>
@@ -21,6 +21,7 @@
            
         },
         components: {
+            pkfooter
         }
     }
 </script>

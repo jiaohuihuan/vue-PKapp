@@ -1,7 +1,6 @@
 <template>
   <div id="app">
     <router-view></router-view>
-    <pkfooter></pkfooter>
   </div>
 </template>
 
@@ -21,7 +20,6 @@
   import pkcommunity from './components/pkcommunity.vue'
   import pkcommunitysearch from './components/pkcommunity/pkcommunitysearch.vue'
   import pkmine from './components/pkmine.vue'
-  import pkfooter from './components/pkfooter.vue'
 
 
 
@@ -42,8 +40,7 @@
         pkgoodssearch,
         pkcommunity,
         pkcommunitysearch,
-        pkmine,
-        pkfooter
+        pkmine
       }
     }
 </script>

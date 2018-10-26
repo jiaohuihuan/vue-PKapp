@@ -5,6 +5,7 @@
         <pkoption></pkoption>
         <pkshow></pkshow>
         <!-- <pkshows></pkshows> -->
+        <pkfooter></pkfooter>
     </div>
          
 </template>
@@ -18,6 +19,8 @@
     import pkoption from './home/pkoption.vue'
     import pkshow from './home/pkshow.vue'
     // import pkshows from './home/pkshows.vue'
+    import pkfooter from './pkfooter.vue'
+
 
 
 
@@ -29,6 +32,7 @@
             pkoption,
             pkshow,
             // pkshows
+            pkfooter
         }
     }
 </script>
